@@ -4,20 +4,21 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Recetario</title>
+    <title>Recetario - Home</title>
+    <link rel="stylesheet" href="/css/index.css">
 </head>
 
 <body>
-    <header>
-        <div>
-            <div>
-                <img src="/assets/logo.png" alt="Recetario">
-                <div>
+    <header class="site-header">
+        <div class="container header-inner">
+            <div class="brand">
+                <img src="/assets/logo.png" alt="Logo de Recetario" class="logo-header">
+                <div class="brand-text">
                     <h1>Recetario</h1>
-                    <p>Compartimos el sabor de casa contigo</p>
+                    <p class="slogan">Compartimos el sabor de casa contigo</p>
                 </div>
             </div>
-            <nav>
+            <nav class="main-nav">
                 <a href="/html/recetas.html">Ver recetas</a>
                 <a href="/html/login.html">Agregar receta</a>
                 <a href="/html/contacto.html">Contacto</a>
@@ -25,15 +26,15 @@
         </div>
     </header>
 
-    <main>
-        <section>
-            <img src="/assets/logo.png" alt="Logo grande de Recetario">
+    <main class="container">
+        <section class="hero">
+            <img src="/assets/logo.png" alt="Logo grande de Recetario" class="logo-hero">
             <h2>Quiénes somos</h2>
             <p>Recetario es un sitio dedicado a compartir recetas caseras. Nuestra misión es preservar sabores
                 familiares y enseñarlos de manera clara y práctica.</p>
         </section>
 
-        <section>
+        <section class="values-grid">
             <article>
                 <h3>Visión</h3>
                 <p>Ser el repositorio de recetas caseras preferido en la comunidad, fácil de usar y colaborativo.</p>
@@ -50,17 +51,19 @@
             </article>
         </section>
 
-        <section>
-            <a href="/html/recetas.html">Ver  las recetas</a>
-            <a href="/html/login.html">Agregar una receta</a>
+        <section class="call-to-actions">
+            <a class="btn" href="/html/recetas.html">Ver recetas</a>
+            <a class="btn admin" href="/html/login.html">Agregar receta (Admin)</a>
         </section>
     </main>
 
-    <footer>
-        <div>
+    <footer class="site-footer">
+        <div class="container">
             <p>Todos los derechos reservados para @ Franco Medina & Veloso Ramirez & Valdez Flores.</p>
         </div>
     </footer>
+
+    <script type="module" src="/js/index.js"></script>
 </body>
 
 </html>
