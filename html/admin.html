@@ -1,11 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Agregar Recetas</title>
+     <link rel="stylesheet" href="/css/admin.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
 </head>
+
 <body>
-    
+    <header>
+        <div>
+            <div>
+                <h1>Agregar Receta</h1>
+            </div>
+            <div>
+                <button>Salir</button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div>
+            <form>
+                <input placeholder="ID">
+                <input placeholder="Nombre de la receta" required>
+                <input placeholder="Categoría (ej. Postre)">
+                <textarea placeholder="Descripcion corta"></textarea>
+                <textarea placeholder="Ingredientes (uno por linea)"></textarea>
+                <textarea placeholder="Pasos (uno por linea)"></textarea>
+                <input readonly placeholder="URL imagen">
+                <input type="file">
+                <button type="button">Subir imagen</button>
+                <div>
+                    <button type="button">Agregar</button>
+                    <button type="button">Buscar</button>
+                    <button type="button">Actualizar</button>
+                    <button type="button">Borrar</button>
+                    <button type="reset">Limpiar</button>
+                </div>
+                <p></p>
+            </form>
+        </div>
+
+        <div>
+            <table>
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Nombre</th>
+                        <th>Categoria</th>
+                        <th>Imagen</th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+        </div>
+    </main>
+
+    <footer>
+        <div>
+            <p>Todos los derechos reservados para @ Franco Medina & Veloso Ramirez & Valdez Flores.</p>
+        </div>
+    </footer>
+
+    <script type="module" src="/js/admin.js"></script>
+
 </body>
+
 </html>
