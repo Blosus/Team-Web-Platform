@@ -1,0 +1,194 @@
+* {
+    box-sizing: border-box
+}
+
+body {
+    font-family: Roboto, sans-serif;
+    margin: 0;
+    background: #f7f5f2;
+    color: #222
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 20px
+}
+
+.site-header {
+    background: #fff;
+    padding: 12px 0;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.06)
+}
+
+.header-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center
+}
+
+.main-nav a {
+    display: inline-block;
+    background: #b87b4a;
+    color: #fff;
+    padding: 14px 40px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+    transition: background 0.3s;
+    margin-left: 10px;
+}
+
+.main-nav a:hover {
+    background: #9e653d;
+}
+
+.grid-recetas {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    gap: 16px;
+    margin-top: 18px
+}
+
+.card {
+    background: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.06);
+    display: flex;
+    flex-direction: column;
+    border: 2px solid #eee;
+    transition: all 0.3s ease;
+}
+
+.card:hover {
+    border-color: #b87b4a;
+    transform: translateY(-3px);
+}
+
+.card img {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+    border-bottom: 3px solid #b87b4a;
+}
+
+.card .body {
+    padding: 12px;
+    flex: 1;
+    display: flex;
+    flex-direction: column
+}
+
+.card h3 {
+    margin: 0 0 6px;
+    font-size: 18px
+}
+
+.card p {
+    flex: 1;
+    color: #555;
+    font-size: 14px
+}
+
+.card .meta {
+    font-size: 13px;
+    color: #888;
+    margin-top: 8px
+}
+
+.controls {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    margin-top: 18px
+}
+
+.controls select,
+.controls input {
+    padding: 8px;
+    border-radius: 8px;
+    border: 1px solid #ddd
+}
+
+.btn-detalle {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 8px 10px;
+    border-radius: 8px;
+    background: #b87b4a;
+    color: #fff;
+    text-decoration: none;
+    transition: background 0.3s ease;
+}
+
+.btn-detalle:hover {
+    background: #9e653d;
+}
+
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0, 0, 0, 0.45)
+}
+
+.modal .modal-content {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 720px;
+    width: 95%;
+    position: relative
+}
+
+.close {
+    position: absolute;
+    right: 12px;
+    top: 12px;
+    background: #eee;
+    border: 0;
+    padding: 6px;
+    border-radius: 6px
+}
+
+.volver {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.btn-volver {
+    display: inline-block;
+    background: #b87b4a;
+    color: #fff;
+    padding: 14px 40px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+    transition: background 0.3s;
+}
+
+.btn-volver:hover {
+    background: #9e653d;
+}
+
+@media(max-width:600px) {
+    .card img {
+        height: 140px
+    }
+}
+
+.site-footer {
+    background: #222;
+    color: #fff;
+    padding: 14px 0;
+    text-align: center;
+    margin-top: 30px;
+}
