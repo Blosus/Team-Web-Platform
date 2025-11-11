@@ -44,3 +44,27 @@ body {
     color: #b87b4a;
     margin-top: 8px
 }
+.main-nav a {
+    display: inline-block;
+    background: #b87b4a;
+    color: #fff;
+    padding: 14px 40px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+    transition: background 0.3s;
+}
+
+.main-nav a:hover {
+    background: #9e653d;
+}
+
+
+.site-footer {
+    background: #222;
+    color: #fff;
+    padding: 14px 0;
+    text-align: center;
+    margin-top: 30px;
+}

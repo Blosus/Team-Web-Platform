@@ -94,3 +94,10 @@ td {
         grid-template-columns: 1fr
     }
 }
+.site-footer {
+    background: #222;
+    color: #fff;
+    padding: 14px 0;
+    text-align: center;
+    margin-top: 30px;
+}
