@@ -1,0 +1,123 @@
+:root {
+    --bg: #f3eee9;
+    --card: #ffffff;
+    --accent: #b87b4a;
+    --muted: #6b6b6b;
+    --container: 1100px;
+}
+
+* {
+    box-sizing: border-box
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background: var(--bg);
+    color: #222;
+    margin: 0;
+    -webkit-font-smoothing: antialiased;
+}
+
+.container {
+    max-width: var(--container);
+    margin: 0 auto;
+    padding: 20px
+}
+
+.site-header {
+    background: #fff;
+    padding: 18px 0;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.06)
+}
+
+.header-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between
+}
+
+.brand h1 {
+    margin: 0;
+    font-size: 22px;
+    color: var(--accent)
+}
+
+.slogan {
+    margin: 4px 0 0;
+    font-size: 13px;
+    color: var(--muted)
+}
+
+.main-nav a {
+    margin-left: 14px;
+    text-decoration: none;
+    color: #222;
+    padding: 8px 10px;
+    border-radius: 6px
+}
+
+.main-nav a:hover {
+    background: rgba(0, 0, 0, 0.04)
+}
+
+.hero {
+    background: var(--card);
+    padding: 24px;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.04);
+    margin: 22px 0
+}
+
+.values-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 14px;
+    margin-bottom: 20px
+}
+
+.values-grid article {
+    background: var(--card);
+    padding: 18px;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.04)
+}
+
+.call-to-actions {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap
+}
+
+.btn {
+    display: inline-block;
+    background: var(--accent);
+    color: #fff;
+    padding: 10px 16px;
+    border-radius: 8px;
+    text-decoration: none
+}
+
+.btn.outline {
+    background: transparent;
+    border: 2px solid var(--accent);
+    color: var(--accent)
+}
+
+.site-footer {
+    background: #222;
+    color: #fff;
+    padding: 14px 0;
+    text-align: center;
+    margin-top: 30px
+}
+
+@media(max-width:700px) {
+    .header-inner {
+        flex-direction: column;
+        gap: 10px
+    }
+
+    .main-nav a {
+        margin: 6px
+    }
+}
