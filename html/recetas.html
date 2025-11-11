@@ -1,18 +1,21 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>Recetario - Recetas</title>
+    <link rel="stylesheet" href="/css/recetas.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <header>
-        <div>
-            <div>
+    <header class="site-header">
+        <div class="container header-inner">
+            <div class="brand">
                 <h1>Recetario</h1>
             </div>
-            <nav>
+            <nav class="main-nav">
                 <a href="/index.html">Inicio</a>
                 <a href="/html/contacto.html">Contacto</a>
                 <a href="/html/login.html">Iniciar sesión</a>
@@ -20,32 +23,33 @@
         </div>
     </header>
 
-    <main>
-        <section>
-            <select>
+    <main class="container">
+        <section class="controls">
+            <select id="filtroCategoria">
                 <option value="todas">Todas las categorías</option>
             </select>
-            <input placeholder="Buscar por nombre" type="search">
+            <input id="buscarNombre" placeholder="Buscar por nombre" type="search">
         </section>
 
-        <section></section>
-
-        <div>
-            <a href="/index.html">Volver al inicio</a>
+        <section id="gridRecetas" class="grid-recetas"></section>
+        <div class="volver">
+            <a href="/index.html" class="btn-volver">Volver al inicio</a>
         </div>
 
-        <div>
-            <div>
-                <button>X</button>
-                <div></div>
+        <div id="modal" class="modal">
+            <div class="modal-content">
+                <button id="cerrarModal" class="close">X</button>
+                <div id="modalBody"></div>
             </div>
         </div>
     </main>
 
-    <footer>
-        <div>
+    <footer class="site-footer">
+        <div class="container">
             <p>Todos los derechos reservados para @ Franco Medina & Veloso Ramirez & Valdez Flores.</p>
         </div>
     </footer>
+
 </body>
+
 </html>
